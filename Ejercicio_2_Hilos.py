@@ -25,7 +25,7 @@ print("Tiempo con for:", fin - inicio)
 
 #Vectorización con NumPy para sumar los elementos de A y B y almacenar el resultado en C, 
 #utilizando diferentes números de hilos y midiendo el tiempo de ejecución para cada caso.
-
+tiempo_base = 0
 print("\nEjecucion con NumPy utilizando diferentes números de hilos:")
 for i in range(4):
     NUM_HILOS = base**i
@@ -45,7 +45,13 @@ for i in range(4):
     
     promedio = sum(tiempos) / len(tiempos)
 
-    print("Tiempo con NumPy ", base**i, " hilos: ", promedio)
+    if NUM_HILOS == 1:
+        tiempo_base = promedio       
+    speedup = tiempo_base / promedio
+
+    print("Tiempo con NumPy ", NUM_HILOS, " hilos: ", promedio)
+    print("Speedup:", speedup)
+    print("Eficiencia: ", speedup/NUM_HILOS)
 
 
 
