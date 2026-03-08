@@ -2,10 +2,8 @@ import multiprocessing
 import time
 import numpy as np
 
-
 def suma_parcial(datos):
     return sum(datos)
-
 
 def ejecutar_paralelo(datos, num_procesos):
     inicio = time.time()
@@ -24,13 +22,12 @@ def ejecutar_paralelo(datos, num_procesos):
 
     return resultado_final, fin - inicio
 
-
 if __name__ == "__main__":
 
     N = 100_000_000
     datos = np.random.randint(0, 10, N)
 
-    #Secuencial 
+    # Secuencial 
     inicio = time.time()
     resultado_sec = sum(datos)
     fin = time.time()
@@ -40,9 +37,9 @@ if __name__ == "__main__":
     print("Secuencial:")
     print("Tiempo:", tiempo_sec, "segundos\n")
 
-    #Paralelo
+    # Paralelo
 
-    for procesos in [2, 4, 8, 16, 32, 64]:
+    for procesos in [2, 4, 8]:
         resultado_par, tiempo_par = ejecutar_paralelo(datos, procesos)
 
         speedup = tiempo_sec / tiempo_par
