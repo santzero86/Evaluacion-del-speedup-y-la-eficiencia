@@ -13,11 +13,11 @@ Copiar y pegar en la terminal:
 ### Ejercicio 1 – Procesos
 ```bash
 python Ejercicio_1_Procesos.py
-
+```
 ### Ejercicio 2 – Hilos
 ```bash
 python Ejercicio_2_Hilos.py
-
+```
 ## Recursos de la tarea
 
 - **Informe de explicación de la tarea:**  
