@@ -1,6 +1,11 @@
 # Evaluación del speedup y la eficiencia
 Tarea de la materia de Infraestructuras Paralelas y Distribuidas: Evaluación del speedup y la eficiencia
 
+## Integrantes:
+
+- Guerrero Jaramillo Santiago David - 202419030
+- Paz Molineros Nicolle Andrea - 202419714
+
 ## Recursos de la tarea
 
 - 📄 **Informe de explicación de la tarea:**  
